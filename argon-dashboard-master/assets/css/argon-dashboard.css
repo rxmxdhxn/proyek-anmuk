@@ -27003,7 +27003,7 @@ pre[class*="language-"] {
   background: #2a2d35;
 }
 
-/* .active {
+/* .active{
   background: #23242a;
 } */
 
@@ -27022,10 +27022,9 @@ pre[class*="language-"] {
 .poppins{
   font-family: 'Poppins', sans-serif;
 }
-/* status */
 
-/* add table */
-.buttonadd {
+/* add item */
+.buttonadd{
   position: relative;
   width: 150px;
   height: 40px;
@@ -27048,9 +27047,9 @@ pre[class*="language-"] {
 
 .buttonadd .button__icon {
   position: absolute;
-  transform: translateX(104px);
+  transform: translateX(109px);
   height: 100%;
-  width: 39px;
+  width: 33px;
   background-color: #34974d;
   display: flex;
   align-items: center;
@@ -27082,8 +27081,7 @@ pre[class*="language-"] {
 .buttonadd:active {
   border: 1px solid #2e8644;
 }
-/* add table */
-
+/* add item */
 
 
 /*# sourceMappingURL=dashboard-free.css.map */
