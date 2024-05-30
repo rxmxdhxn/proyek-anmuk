@@ -27083,5 +27083,15 @@ pre[class*="language-"] {
 }
 /* add item */
 
+/* button */
+.button{
+  border: none;
+  background: none;
+  background-color: transparent;
+}
 
+.button:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
 /*# sourceMappingURL=dashboard-free.css.map */
