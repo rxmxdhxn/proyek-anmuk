@@ -106,9 +106,14 @@
                 <h6>Manajemen Produk</h6>
               </div>
               <div class="p-3">
-                <button type="button" class="buttonadd">
+                <button type="button" class="buttonadd" data-bs-toggle="modal" data-bs-target="#addItem">
                   <span class="button__text fs-6">Add Item</span>
-                  <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                  <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"
+                      stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24"
+                      fill="none" class="svg">
+                      <line y2="19" y1="5" x2="12" x1="12"></line>
+                      <line y2="12" y1="12" x2="19" x1="5"></line>
+                    </svg></span>
                 </button>
               </div>
             </div>
@@ -117,12 +122,13 @@
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kode Transaksi</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Pemesan</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Produk
+                      </th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Stock</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Harga
                       </th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                        Employed</th>
+                        Kategori</th>
                       <th class="text-secondary opacity-7"></th>
                     </tr>
                   </thead>
@@ -130,191 +136,154 @@
                     <tr>
                       <td>
                         <div class="d-flex px-2 py-1">
-                          <!-- <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
-                          </div> -->
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">ID123456789</h6>
+                            <h6 class="mb-0 text-sm">Kaos polo biru</h6>
                           </div>
                         </div>
                       </td>
                       <td>
                         <p class="text-xs font-weight-bold mb-0">Faliana</p>
                       </td>
-                      <td class="align-middle text-center-sm">
-                        <div class="dropdown-container">
-                          <div class="dropdown text-xs">
-                            <div class="select" style="height: 22px; width: 84px;">
-                              <span class="selected poppins">Null</span>
-                              <div class="caret"></div>
-                            </div>
-                            <ul class="statuses poppins">
-                              <li class="active">Null</li>
-                              <li>Proses</li>
-                              <li>Selesai</li>
-                              <li>Tunda</li>
-                            </ul>
-                          </div>
-                        </div>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs text-center font-weight-bold">10.000</span>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
+                        <span class="text-secondary text-xs font-weight-bold">Kaos polo</span>
                       </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                          data-original-title="Edit user">
+                      <td class="text-center">
+                        <button type="button" class="buttonedit" data-bs-toggle="modal" data-bs-target="#editItem">
                           Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user2">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Alexa Liras</h6>
-                            <p class="text-xs text-secondary mb-0">alexa@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">11/01/19</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                          data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user3">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Laurent Perrier</h6>
-                            <p class="text-xs text-secondary mb-0">laurent@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Executive</p>
-                        <p class="text-xs text-secondary mb-0">Projects</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">19/09/17</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                          data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user4">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Michael Levi</h6>
-                            <p class="text-xs text-secondary mb-0">michael@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">24/12/08</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                          data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user5">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Richard Gran</h6>
-                            <p class="text-xs text-secondary mb-0">richard@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Manager</p>
-                        <p class="text-xs text-secondary mb-0">Executive</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">04/10/21</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                          data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user6">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Miriam Eric</h6>
-                            <p class="text-xs text-secondary mb-0">miriam@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programtor</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                          data-original-title="Edit user">
-                          Edit
-                        </a>
+                        </button>
+                        <button type="button" class="buttonedit" data-bs-toggle="modal" data-bs-target="#deleteItem">
+                          Delete
+                        </button>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <!-- Modal main-->
+              <div class="modal fade" id="addItem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Item</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="" method="">
+                        <div class="mb-3">
+                          <label class="form-label">Nama Produk</label>
+                          <input type="text" class="form-control" placeholder="Nama Produk">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Stock</label>
+                          <input type="text" class="form-control" placeholder="Stock">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Harga</label>
+                          <input type="text" class="form-control" placeholder="Harga">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Kategori</label>
+                          <input class="form-control" list="datalistOptions"
+                            placeholder="Kategori">
+                          <datalist id="datalistOptions">
+                            <option value="Kaos">
+                            <option value="Kaos Polo">
+                            <option value="Hoodie">
+                            <option value="Kemeja">
+                            <option value="Topi">
+                            <option value="Celemek">
+                            <option value="Celana Training">
+                            <option value="Celana Formal">
+                            <option value="Slayer">
+                            <option value="Totebag">
+                          </datalist>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Confirm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+              <!-- Modal edit-->
+              <div class="modal fade" id="editItem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Edit Item</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="" method="">
+                        <div class="mb-3">
+                          <label class="form-label">Nama Produk</label>
+                          <input type="text" class="form-control" placeholder="Nama Produk">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Stock</label>
+                          <input type="text" class="form-control" placeholder="Stock">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Harga</label>
+                          <input type="text" class="form-control" placeholder="Harga">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Kategori</label>
+                          <input class="form-control" list="datalistOptions"
+                            placeholder="Kategori">
+                          <datalist id="datalistOptions">
+                            <option value="Kaos">
+                            <option value="Kaos Polo">
+                            <option value="Hoodie">
+                            <option value="Kemeja">
+                            <option value="Topi">
+                            <option value="Celemek">
+                            <option value="Celana Training">
+                            <option value="Celana Formal">
+                            <option value="Slayer">
+                            <option value="Totebag">
+                          </datalist>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Confirm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+              <!-- Modal delete-->
+              <div class="modal fade" id="deleteItem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Delete Item</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Apakah anda yakin ingin menghapus item ini?
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-danger">Confirm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
             </div>
           </div>
         </div>
