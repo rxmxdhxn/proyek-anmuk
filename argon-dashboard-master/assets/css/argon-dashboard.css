@@ -27148,4 +27148,35 @@ pre[class*="language-"] {
   display: flex;
   border-radius: 0.3em;
 }
+
+
+/* detail column */
+.detail-column {
+  max-width: 200px;
+  min-width: 200px;
+  white-space: normal;
+}
+
+@media (max-width: 1200px) {
+  .detail-column {
+    max-width: 180px;
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .detail-column {
+    max-width: 160px;
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-column {
+    max-width: 150px;
+    min-width: 150px;
+  }
+}
+/* detail column */
+
 /*# sourceMappingURL=dashboard-free.css.map */
